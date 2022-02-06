@@ -21,7 +21,7 @@ var Sprite = function (x, y, rot) {
 };
 var items = [new Sprite];
 var shape = function (x, y, text, c) {
-    _.font="5em Arial";
+    _.font="4em Arial";
     _.fillStyle = c;
     _.fillText(text, x, y);
 };
