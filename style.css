@@ -28,7 +28,7 @@ body {
     justify-content: center; 
     cursor: pointer;
   }
-  p#clickHere {
+  #clickHere {
     text-transform: uppercase;
     padding: 1em;
   }
