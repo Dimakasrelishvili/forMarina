@@ -10,7 +10,7 @@ var setCanvasSize = function () {
     c.height = window.innerHeight;
 };
 var randHeart = function () {
-    return ["♥","♥","♡","✮","✿","♕","✮","❀"][Math.floor(Math.random() * 8)];
+    return ["♥","♥","✮","♥","❀"][Math.floor(Math.random() * 5)];
 };
 var Sprite = function (x, y, rot) {
     this.x    = x || Math.random() * c.width;
@@ -21,7 +21,7 @@ var Sprite = function (x, y, rot) {
 };
 var items = [new Sprite];
 var shape = function (x, y, text, c) {
-    _.font="4em Arial";
+    _.font="5em Arial";
     _.fillStyle = c;
     _.fillText(text, x, y);
 };
