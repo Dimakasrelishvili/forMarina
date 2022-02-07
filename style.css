@@ -31,4 +31,5 @@ body {
   #clickHere {
     text-transform: uppercase;
     padding: 1em;
+    font-family : bold;
   }

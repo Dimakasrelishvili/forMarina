@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-  
+    var audioElement = new Audio('audio/Peace.mp3')
     var c 		 = document.getElementById('c');
     var _ 		 = c.getContext('2d');
 var h1 		 = document.querySelector('h1');
@@ -10,7 +10,7 @@ var setCanvasSize = function () {
     c.height = window.innerHeight;
 };
 var randHeart = function () {
-    return ["♥","♥","♡","✮","❀","♕"][Math.floor(Math.random() * 6)];
+    return ["♥","♥","♡","✮","✿","♕","✮","❀"][Math.floor(Math.random() * 8)];
 };
 var Sprite = function (x, y, rot) {
     this.x    = x || Math.random() * c.width;
@@ -37,6 +37,8 @@ window.onmousedown = function (e) {
 };
 var alpha = 0.1;
 h1.onclick = function (e) {
+    audioElement.play()
+    //document.getElementById('music').play()
     document.querySelector('p').style.display = "none";
     h1.style.color = 'rgba(238,85,85,'+alpha+')';
     document.body.style.backgroundColor = 'rgba(238,85,85,'+alpha+')';
