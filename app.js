@@ -1,5 +1,6 @@
 $( document ).ready(function() {
-    var audioElement = new Audio('audio/Peace.mp3')
+    var audioElement = new Audio('audio/LightFoundMe.mp3')
+    audioElement.volume = 0.5
     var c 		 = document.getElementById('c');
     var _ 		 = c.getContext('2d');
 var h1 		 = document.querySelector('h1');
@@ -37,7 +38,7 @@ window.onmousedown = function (e) {
 };
 var alpha = 0.1;
 h1.onclick = function (e) {
-    audioElement.play()
+   audioElement.play()
     //document.getElementById('music').play()
     document.querySelector('p').style.display = "none";
     h1.style.color = 'rgba(238,85,85,'+alpha+')';
