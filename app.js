@@ -11,7 +11,7 @@ var setCanvasSize = function () {
     c.height = window.innerHeight;
 };
 var randHeart = function () {
-    return ["♥","♥","✮","♥","❀"][Math.floor(Math.random() * 5)];
+    return ["♥","♥","✮","♥","♥"][Math.floor(Math.random() * 5)];
 };
 var Sprite = function (x, y, rot) {
     this.x    = x || Math.random() * c.width;
